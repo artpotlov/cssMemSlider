@@ -127,6 +127,12 @@ input[type=radio]:nth-child(5):checked ~ .slider__slides > .slider__track-slides
   overflow: hidden;
 }
 
+.slider__track-caption {
+  width: calc(100% * 5);
+  display: flex;
+  transition: all .2s;
+}
+
 .slider__text {
   margin: 0;
   padding: 0;
