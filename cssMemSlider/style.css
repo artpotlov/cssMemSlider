@@ -70,10 +70,13 @@ a:hover {
   color: var(--color-link-hover);
 }
 
-.slider__track {
-  width: calc((100vw - 20rem) * 5);
-  display: flex;
-  transition: all .3s;
+/* slider */
+
+.slider {
+  display: grid;
+  max-width: var(--slide-size);
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
 }
 
 /* slides */
