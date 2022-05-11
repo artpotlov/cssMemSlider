@@ -210,4 +210,14 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   background-color: var(--color-marker-active);
 }
 
+/* media 768 */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  :root {
+    --slide-size: calc(100vw - 6rem);
+    --margin-desktop: 3rem 3rem 0 3rem;
+  }
+}
+
+/* media 500 */
 
