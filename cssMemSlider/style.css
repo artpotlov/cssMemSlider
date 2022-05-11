@@ -14,6 +14,8 @@
   --font-line-height-text: 150%;
   --font-line-height-head: 120%;
 
+  --slide-size: calc(100vw - 20rem);
+  --navigation-size: calc((0.3rem * 2 + 0.5rem) * 5); 
   --margin-desktop: 3rem 10rem 0 10rem;
 }
 
