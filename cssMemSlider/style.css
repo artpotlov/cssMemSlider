@@ -87,6 +87,11 @@ a:hover {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+.slider__track-slides {
+  width: calc(var(--slide-size) * 5);
+  display: flex;
+  transition: all .3s;
 }
 
 .slider__img {
