@@ -260,6 +260,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   }
 
   .slider__navigation {
+    margin-inline: auto;
     order: 2;
   }
 
@@ -294,6 +295,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   }
 
   .slider__navigation {
+    margin-inline: auto;
     order: 2;
   }
 
