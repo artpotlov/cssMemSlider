@@ -84,6 +84,9 @@ a:hover {
 .slider__slides {
   width: var(--slide-size);
   overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 }
 
 .slider__img {
