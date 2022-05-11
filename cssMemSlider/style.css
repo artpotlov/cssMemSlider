@@ -179,7 +179,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track-capti
   border-radius: 50%;
   background-color: var(--color-marker);
   cursor: pointer;
-  transition: background .3s;
+  transition: background-color .3s;
 }
 
 .slider__marker-btn:hover {
