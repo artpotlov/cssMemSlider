@@ -141,24 +141,24 @@ input[type=radio]:nth-child(5):checked ~ .slider__slides > .slider__track-slides
   width: 100%;
 }
 
-input[type=radio]:nth-child(1):checked ~ .slider__caption > .slider__track {
+input[type=radio]:nth-child(1):checked ~ .slider__caption > .slider__track-caption {
   transform: translateX(0);
 }
 
-input[type=radio]:nth-child(2):checked ~ .slider__caption > .slider__track {
-  transform: translateX(calc(-1 * (100vw - 20rem)));
+input[type=radio]:nth-child(2):checked ~ .slider__caption > .slider__track-caption {
+  transform: translateX(calc(-1 * (var(--slide-size) - var(--navigation-size))));
 }
 
-input[type=radio]:nth-child(3):checked ~ .slider__caption > .slider__track {
-  transform: translateX(calc(-2 * (100vw - 20rem)));
+input[type=radio]:nth-child(3):checked ~ .slider__caption > .slider__track-caption {
+  transform: translateX(calc(-2 * (var(--slide-size) - var(--navigation-size))));
 }
 
-input[type=radio]:nth-child(4):checked ~ .slider__caption > .slider__track {
-  transform: translateX(calc(-3 * (100vw - 20rem)));
+input[type=radio]:nth-child(4):checked ~ .slider__caption > .slider__track-caption {
+  transform: translateX(calc(-3 * (var(--slide-size) - var(--navigation-size))));
 }
 
-input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track {
-  transform: translateX(calc(-4 * (100vw - 20rem)));
+input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track-caption {
+  transform: translateX(calc(-4 * (var(--slide-size) - var(--navigation-size))));
 }
 
 /* navigation panel */
