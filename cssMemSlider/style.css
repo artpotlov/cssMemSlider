@@ -82,7 +82,7 @@ a:hover {
 /* slides */
 
 .slider__slides {
-  width: calc(100vw - 20rem);
+  width: var(--slide-size);
   overflow: hidden;
 }
 
