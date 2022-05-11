@@ -95,10 +95,14 @@ a:hover {
   transition: all .3s;
 }
 
-.slider__img {
-  display: block;
+.slider__img-wrapper {
   width: var(--slide-size);
-  height: 100%;
+  max-height: calc(var(--slide-size) / 2.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
 }
 
 input[type=radio]:nth-child(1):checked ~ .slider__slides > .slider__track-slides {
