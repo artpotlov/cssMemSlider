@@ -96,8 +96,8 @@ a:hover {
 
 .slider__img {
   display: block;
-  width: calc(100vw - 20rem);
-  height: 100px;
+  width: var(--slide-size);
+  height: 100%;
 }
 
 input[type=radio]:nth-child(1):checked ~ .slider__slides > .slider__track {
