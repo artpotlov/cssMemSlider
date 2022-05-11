@@ -221,3 +221,60 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
 
 /* media 500 */
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  :root {
+    --navigation-size: 0rem;
+    --slide-size: calc(100vw - 4rem);
+    --margin-desktop: 3rem 2rem 0 2rem;
+  }
+
+  .slider {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(2, auto);
+    grid-row-gap: 1.5rem;
+  }
+
+  .slider__slides {
+    grid-area: auto;
+    order: 1;
+  }
+
+  .slider__caption {
+    order: 3;
+  }
+
+  .slider__navigation {
+    order: 2;
+  }
+
+}
+
+/* media 320 */
+
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+  :root {
+    --navigation-size: 0rem;
+    --slide-size: calc(100vw - 1rem);
+    --margin-desktop: 3rem 0.5rem 0 0.5rem;
+  }
+
+  .slider {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(2, auto);
+    grid-row-gap: 1.5rem;
+  }
+
+  .slider__slides {
+    grid-area: auto;
+    order: 1;
+  }
+
+  .slider__caption {
+    order: 3;
+  }
+
+  .slider__navigation {
+    order: 2;
+  }
+
+}
