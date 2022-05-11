@@ -4,6 +4,9 @@
   --color-bg: black;
   --color-text: white;
   --color-link-hover: blanchedalmond;
+  --color-marker: cornflowerblue;
+  --color-marker-hover: deepskyblue;
+  --color-marker-active: aquamarine;
 
   --font-family: Arial, Helvetica, sans-serif;
   --font-size-text: 1rem;
@@ -11,8 +14,10 @@
   --font-line-height-text: 150%;
   --font-line-height-head: 120%;
 
-  --margin-desktop: 3rem 10% 0 10%;
+  --margin-desktop: 3rem 10rem 0 10rem;
 }
+
+/* base */
 
 html {
   box-sizing: border-box;
@@ -23,6 +28,7 @@ html {
 }
 
 body {
+  width: 100vw;
   background-color: var(--color-bg);
   font-family: var(--font-family);
   color: var(--color-text);
@@ -34,23 +40,22 @@ body > * {
 
 .header {
   text-align: center;
-  margin-top: 0;
 }
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
+input[type=radio] {
+  display: none;
 }
 
 h1 {
   font-size: var(--font-size-head);
   line-height: var(--font-line-height-head);
-}
-
-p {
-  font-size: var(--font-size-text);
-  line-height: var(--font-line-height-text);
 }
 
 a {
@@ -62,3 +67,127 @@ a {
 a:hover {
   color: var(--color-link-hover);
 }
+
+.slider__track {
+  width: calc((100vw - 20rem) * 5);
+  display: flex;
+  transition: all .3s;
+}
+
+/* slides */
+
+.slider__slides {
+  width: calc(100vw - 20rem);
+  overflow: hidden;
+}
+
+.slider__img {
+  display: block;
+  width: calc(100vw - 20rem);
+  height: 100px;
+}
+
+input[type=radio]:nth-child(1):checked ~ .slider__slides > .slider__track {
+  transform: translateX(0);
+}
+
+input[type=radio]:nth-child(2):checked ~ .slider__slides > .slider__track {
+  transform: translateX(calc(-1 * (100vw - 20rem)));
+}
+
+input[type=radio]:nth-child(3):checked ~ .slider__slides > .slider__track {
+  transform: translateX(calc(-2 * (100vw - 20rem)));
+}
+
+input[type=radio]:nth-child(4):checked ~ .slider__slides > .slider__track {
+  transform: translateX(calc(-3 * (100vw - 20rem)));
+}
+
+input[type=radio]:nth-child(5):checked ~ .slider__slides > .slider__track {
+  transform: translateX(calc(-4 * (100vw - 20rem)));
+}
+/* caption */
+
+.slider__caption {
+  width: calc(100vw - 20rem);
+  overflow: hidden;
+}
+
+.slider__text {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-text);
+  line-height: var(--font-line-height-text);
+  width: calc(100vw - 20rem);
+}
+
+input[type=radio]:nth-child(1):checked ~ .slider__caption > .slider__track {
+  transform: translateX(0);
+}
+
+input[type=radio]:nth-child(2):checked ~ .slider__caption > .slider__track {
+  transform: translateX(calc(-1 * (100vw - 20rem)));
+}
+
+input[type=radio]:nth-child(3):checked ~ .slider__caption > .slider__track {
+  transform: translateX(calc(-2 * (100vw - 20rem)));
+}
+
+input[type=radio]:nth-child(4):checked ~ .slider__caption > .slider__track {
+  transform: translateX(calc(-3 * (100vw - 20rem)));
+}
+
+input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track {
+  transform: translateX(calc(-4 * (100vw - 20rem)));
+}
+
+/* navigation panel */
+
+.slider__navigation {
+  display: inline-flex;
+}
+
+.slider__wrapper-btn {
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.slider__marker-btn {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-marker);
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.slider__marker-btn:hover {
+  background-color: var(--color-marker-hover);
+}
+
+.slider__wrapper-btn:hover > .slider__marker-btn {
+  background-color: var(--color-marker-hover);
+}
+
+input[type=radio]:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) > .slider__marker-btn {
+  background-color: var(--color-marker-active);
+}
+
+input[type=radio]:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) > .slider__marker-btn {
+  background-color: var(--color-marker-active);
+}
+
+input[type=radio]:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) > .slider__marker-btn {
+  background-color: var(--color-marker-active);
+}
+
+input[type=radio]:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) > .slider__marker-btn {
+  background-color: var(--color-marker-active);
+}
+
+input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) > .slider__marker-btn {
+  background-color: var(--color-marker-active);
+}
+
+
