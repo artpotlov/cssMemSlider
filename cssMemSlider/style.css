@@ -200,22 +200,47 @@ input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track-capti
 
 input[type=radio]:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) > .slider__marker-btn {
   background-color: var(--color-marker-active);
+  cursor: auto;
+}
+
+input[type=radio]:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) {
+  cursor: auto;
 }
 
 input[type=radio]:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) > .slider__marker-btn {
   background-color: var(--color-marker-active);
+  cursor: auto;
+}
+
+input[type=radio]:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) {
+  cursor: auto;
 }
 
 input[type=radio]:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) > .slider__marker-btn {
   background-color: var(--color-marker-active);
+  cursor: auto;
+}
+
+input[type=radio]:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) {
+  cursor: auto;
 }
 
 input[type=radio]:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) > .slider__marker-btn {
   background-color: var(--color-marker-active);
+  cursor: auto;
+}
+
+input[type=radio]:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) {
+  cursor: auto;
 }
 
 input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) > .slider__marker-btn {
   background-color: var(--color-marker-active);
+  cursor: auto;
+}
+
+input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) {
+  cursor: auto;
 }
 
 /* media 768 */
