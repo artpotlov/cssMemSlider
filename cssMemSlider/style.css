@@ -79,7 +79,7 @@ a:hover {
   max-width: var(--slide-size);
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
-  grid-row: auto;
+  grid-auto-rows: auto;
   grid-row-gap: 2rem;
 }
 
@@ -272,7 +272,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   .slider {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr repeat(2, auto);
-    grid-row: auto;
+    grid-auto-rows: auto;
     grid-row-gap: 1rem;
   }
 
@@ -308,7 +308,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   .slider {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr repeat(2, auto);
-    grid-row: auto;
+    grid-auto-rows: auto;
     grid-row-gap: 1.5rem;
   }
 
