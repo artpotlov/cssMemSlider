@@ -6,6 +6,7 @@
   --color-link-hover: blanchedalmond;
   --color-marker: cornflowerblue;
   --color-marker-hover: deepskyblue;
+  --color-marker-press: royalblue;
   --color-marker-active: aquamarine;
 
   --font-family: Arial, Helvetica, sans-serif;
@@ -192,6 +193,10 @@ input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track-capti
 
 .slider__wrapper-btn:hover > .slider__marker-btn {
   background-color: var(--color-marker-hover);
+}
+
+.slider__wrapper-btn:active > .slider__marker-btn {
+  background-color: var(--color-marker-press);
 }
 
 input[type=radio]:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) > .slider__marker-btn {
