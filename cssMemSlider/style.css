@@ -16,7 +16,7 @@
 
   --slide-size: calc(100vw - 20rem);
   --navigation-size: calc((0.3rem * 2 + 0.5rem) * 5); 
-  --margin-desktop: 3rem 10rem 0 10rem;
+  --margin-desktop: 3rem 10rem;
 }
 
 /* base */
@@ -248,7 +248,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
   :root {
     --slide-size: calc(100vw - 6rem);
-    --margin-desktop: 3rem 3rem 0 3rem;
+    --margin-desktop: 3rem 4rem;
   }
 
   .slider__img-wrapper {
@@ -262,7 +262,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   :root {
     --navigation-size: 0rem;
     --slide-size: calc(100vw - 4rem);
-    --margin-desktop: 3rem 2rem 0 2rem;
+    --margin-desktop: 2rem 2rem;
   }
 
   .slider {
@@ -297,7 +297,7 @@ input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-
   :root {
     --navigation-size: 0rem;
     --slide-size: calc(100vw - 1rem);
-    --margin-desktop: 3rem 0.5rem 0 0.5rem;
+    --margin-desktop: 1.5rem 0.5rem;
   }
 
   .slider {
