@@ -2,6 +2,7 @@
 
 :root {
   --color-bg: black;
+  --color-bg-block: rgb(25, 25, 25);
   --color-text: white;
   --color-link-hover: blanchedalmond;
   --color-marker: cornflowerblue;
@@ -19,8 +20,6 @@
   --navigation-size: calc((0.3rem * 2 + 0.5rem) * 5); 
   --margin-desktop: 3rem 10rem;
 }
-
-/* base */
 
 html {
   box-sizing: border-box;
@@ -40,10 +39,6 @@ body > * {
   margin: var(--margin-desktop);
 }
 
-.header {
-  text-align: center;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -51,25 +46,26 @@ body > * {
   gap: 1rem;
 }
 
-input[type=radio] {
+.slider__radio {
   width: 0;
   height: 0;
   visibility: hidden;
   grid-area: -1 / 1 / 3 / 1;
 }
 
-h1 {
+.header__title {
   font-size: var(--font-size-head);
   line-height: var(--font-line-height-head);
+  text-align: center;
 }
 
-a {
+.footer__link {
   text-decoration: none;
   color: inherit;
   transition: color .3s;
 }
 
-a:hover {
+.footer__link:hover {
   color: var(--color-link-hover);
 }
 
@@ -104,6 +100,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   object-fit: contain;
+  padding: 1rem;
 }
 
 .slider__img {
@@ -111,23 +108,23 @@ a:hover {
   max-height: 100%;
 }
 
-input[type=radio]:nth-child(1):checked ~ .slider__slides > .slider__track-slides {
+.slider__radio:nth-child(1):checked ~ .slider__slides > .slider__track-slides {
   transform: translateX(0);
 }
 
-input[type=radio]:nth-child(2):checked ~ .slider__slides > .slider__track-slides {
+.slider__radio:nth-child(2):checked ~ .slider__slides > .slider__track-slides {
   transform: translateX(calc(-1 * var(--slide-size)));
 }
 
-input[type=radio]:nth-child(3):checked ~ .slider__slides > .slider__track-slides {
+.slider__radio:nth-child(3):checked ~ .slider__slides > .slider__track-slides {
   transform: translateX(calc(-2 * var(--slide-size)));
 }
 
-input[type=radio]:nth-child(4):checked ~ .slider__slides > .slider__track-slides {
+.slider__radio:nth-child(4):checked ~ .slider__slides > .slider__track-slides {
   transform: translateX(calc(-3 * var(--slide-size)));
 }
 
-input[type=radio]:nth-child(5):checked ~ .slider__slides > .slider__track-slides {
+.slider__radio:nth-child(5):checked ~ .slider__slides > .slider__track-slides {
   transform: translateX(calc(-4 * var(--slide-size)));
 }
 
@@ -150,23 +147,23 @@ input[type=radio]:nth-child(5):checked ~ .slider__slides > .slider__track-slides
   width: 100%;
 }
 
-input[type=radio]:nth-child(1):checked ~ .slider__caption > .slider__track-caption {
+.slider__radio:nth-child(1):checked ~ .slider__caption > .slider__track-caption {
   transform: translateX(0);
 }
 
-input[type=radio]:nth-child(2):checked ~ .slider__caption > .slider__track-caption {
+.slider__radio:nth-child(2):checked ~ .slider__caption > .slider__track-caption {
   transform: translateX(calc(-1 * (var(--slide-size) - var(--navigation-size))));
 }
 
-input[type=radio]:nth-child(3):checked ~ .slider__caption > .slider__track-caption {
+.slider__radio:nth-child(3):checked ~ .slider__caption > .slider__track-caption {
   transform: translateX(calc(-2 * (var(--slide-size) - var(--navigation-size))));
 }
 
-input[type=radio]:nth-child(4):checked ~ .slider__caption > .slider__track-caption {
+.slider__radio:nth-child(4):checked ~ .slider__caption > .slider__track-caption {
   transform: translateX(calc(-3 * (var(--slide-size) - var(--navigation-size))));
 }
 
-input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track-caption {
+.slider__radio:nth-child(5):checked ~ .slider__caption > .slider__track-caption {
   transform: translateX(calc(-4 * (var(--slide-size) - var(--navigation-size))));
 }
 
@@ -201,48 +198,48 @@ input[type=radio]:nth-child(5):checked ~ .slider__caption > .slider__track-capti
   background-color: var(--color-marker-press);
 }
 
-input[type=radio]:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) > .slider__marker-btn {
+.slider__radio:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) > .slider__marker-btn {
   background-color: var(--color-marker-active);
   cursor: auto;
 }
 
-input[type=radio]:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) {
+.slider__radio:nth-child(1):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(1) {
   cursor: auto;
 }
 
-input[type=radio]:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) > .slider__marker-btn {
+.slider__radio:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) > .slider__marker-btn {
   background-color: var(--color-marker-active);
   cursor: auto;
 }
 
-input[type=radio]:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) {
+.slider__radio:nth-child(2):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(2) {
   cursor: auto;
 }
 
-input[type=radio]:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) > .slider__marker-btn {
+.slider__radio:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) > .slider__marker-btn {
   background-color: var(--color-marker-active);
   cursor: auto;
 }
 
-input[type=radio]:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) {
+.slider__radio:nth-child(3):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(3) {
   cursor: auto;
 }
 
-input[type=radio]:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) > .slider__marker-btn {
+.slider__radio:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) > .slider__marker-btn {
   background-color: var(--color-marker-active);
   cursor: auto;
 }
 
-input[type=radio]:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) {
+.slider__radio:nth-child(4):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(4) {
   cursor: auto;
 }
 
-input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) > .slider__marker-btn {
+.slider__radio:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) > .slider__marker-btn {
   background-color: var(--color-marker-active);
   cursor: auto;
 }
 
-input[type=radio]:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) {
+.slider__radio:nth-child(5):checked ~ .slider__navigation > .slider__wrapper-btn:nth-child(5) {
   cursor: auto;
 }
 
