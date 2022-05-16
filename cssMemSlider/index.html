@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>CSS Mem Slider</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">CSS Mem Slider</h1>
+  </header>
+  <main class="main">
+    <div class="slider">
+        <input type="radio" name="slider" id="slider__radio-img-1" class="slider__radio" checked>
+        <input type="radio" name="slider" id="slider__radio-img-2" class="slider__radio">
+        <input type="radio" name="slider" id="slider__radio-img-3" class="slider__radio">
+        <input type="radio" name="slider" id="slider__radio-img-4" class="slider__radio">
+        <input type="radio" name="slider" id="slider__radio-img-5" class="slider__radio">
+  
+        <div class="slider__slides">
+          <div class="slider__track-slides">
+            <div class="slider__img-wrapper">
+              <img src="./assets/mem-1.jpg" alt="Mem 1" class="slider__img">
+            </div>
+            <div class="slider__img-wrapper">
+              <img src="./assets/mem-2.jpeg" alt="Mem 2" class="slider__img">
+            </div>
+            <div class="slider__img-wrapper">
+              <img src="./assets/mem-3.jpg" alt="Mem 3" class="slider__img">
+            </div>
+            <div class="slider__img-wrapper">
+              <img src="./assets/mem-4.jpeg" alt="Mem 4" class="slider__img">
+            </div>
+            <div class="slider__img-wrapper">
+              <img src="./assets/mem-5.jpg" alt="Mem 5" class="slider__img">
+            </div>
+          </div>
+        </div>
+
+      <div class="slider__caption">
+          <div class="slider__track-caption">
+            <p class="slider__text">The meme with Johnny Depp</p>
+            <p class="slider__text">The JavaScript meme</p>
+            <p class="slider__text">The dedline meme</p>
+            <p class="slider__text">The SpaceX meme</p>
+            <p class="slider__text">The Node.js meme</p>
+          </div>
+      </div>
+
+      <div class="slider__navigation">
+        <label for="slider__radio-img-1" class="slider__wrapper-btn">
+          <span class="slider__marker-btn"></span>
+        </label>
+        <label for="slider__radio-img-2" class="slider__wrapper-btn">
+          <span class="slider__marker-btn"></span>
+        </label>
+        <label for="slider__radio-img-3" class="slider__wrapper-btn">
+          <span class="slider__marker-btn"></span>
+        </label>
+        <label for="slider__radio-img-4" class="slider__wrapper-btn">
+          <span class="slider__marker-btn"></span>
+        </label>
+        <label for="slider__radio-img-5" class="slider__wrapper-btn">
+          <span class="slider__marker-btn"></span>
+        </label>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__col"><a href="https://github.com/artpotlov/cssmemslider" target="_blank" class="footer__link">Source code on GitHub</a></div>
+    <div class="footer__col">© 2022</div>
+  </footer>
+</body>
+</html>
